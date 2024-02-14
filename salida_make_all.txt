@@ -1,0 +1,1732 @@
+make article presentation thesis
+make article-docx article-pdf article-tex
+(cd article && \
+	pandoc --defaults=./../defaults.yaml --defaults=docx.yaml)
+[INFO] Running filter citeproc
+[INFO] Fetching https://www.zotero.org/styles/chicago-note-bibliography...
+[INFO] Loaded references.bib from references.bib
+[INFO] Completed filter citeproc in 120 ms
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+(cd article && \
+	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
+[INFO] Running filter citeproc
+[INFO] Fetching https://www.zotero.org/styles/chicago-note-bibliography...
+[INFO] Loaded references.bib from references.bib
+[INFO] Completed filter citeproc in 127 ms
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Extracting /private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-69cfc0e03f53ae75/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg...
+[INFO] [makePDF] Temp dir:
+  /private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-69cfc0e03f53ae75
+[INFO] [makePDF] Command line:
+  tectonic "--outdir" "/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-69cfc0e03f53ae75" "-"
+[INFO] [makePDF] Relevant environment variables:
+  ("SHELL","/bin/zsh")
+  ("TMPDIR","/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/")
+  ("PATH","/usr/local/sbin:/Users/Arturo/miniconda3/bin:/Users/Arturo/miniconda3/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Users/Arturo/.cargo/bin")
+  ("PWD","/Users/Arturo/academic-pandoc-template-1/article")
+  ("HOME","/Users/Arturo")
+[INFO] [makePDF] Source:
+  % Options for packages loaded elsewhere
+  \PassOptionsToPackage{unicode,}{hyperref}
+  \PassOptionsToPackage{hyphens}{url}
+  %
+  \documentclass[
+    ]{scrartcl}
+  \usepackage{amsmath,amssymb}
+  \usepackage{iftex}
+  \ifPDFTeX
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{textcomp} % provide euro and other symbols
+  \else % if luatex or xetex
+    \usepackage{unicode-math} % this also loads fontspec
+    \defaultfontfeatures{Scale=MatchLowercase}
+    \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \fi
+  \usepackage{lmodern}
+  \ifPDFTeX\else
+    % xetex/luatex font selection
+  \fi
+  % Use upquote if available, for straight quotes in verbatim environments
+  \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+  \IfFileExists{microtype.sty}{% use microtype if available
+    \usepackage[]{microtype}
+    \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+  }{}
+  \makeatletter
+  \@ifundefined{KOMAClassName}{% if non-KOMA class
+    \IfFileExists{parskip.sty}{%
+      \usepackage{parskip}
+    }{% else
+      \setlength{\parindent}{0pt}
+      \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+  }{% if KOMA class
+    \KOMAoptions{parskip=half}}
+  \makeatother
+  \usepackage{xcolor}
+  \usepackage{color}
+  \usepackage{fancyvrb}
+  \newcommand{\VerbBar}{|}
+  \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+  % Add ',fontsize=\small' for more characters per line
+  \newenvironment{Shaded}{}{}
+  \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+  \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+  \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+  \newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+  \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+  \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+  \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+  \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+  \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+  \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+  \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+  \newcommand{\ExtensionTok}[1]{#1}
+  \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+  \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+  \newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+  \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+  \newcommand{\NormalTok}[1]{#1}
+  \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+  \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+  \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+  \newcommand{\RegionMarkerTok}[1]{#1}
+  \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+  \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+  \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \usepackage{longtable,booktabs,array}
+  \usepackage{calc} % for calculating minipage widths
+  % Correct order of tables after \paragraph or \subparagraph
+  \usepackage{etoolbox}
+  \makeatletter
+  \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+  \makeatother
+  % Allow footnotes in longtable head/foot
+  \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+  \makesavenoteenv{longtable}
+  \usepackage{graphicx}
+  \makeatletter
+  \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+  \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+  \makeatother
+  % Scale images if necessary, so that they will not overflow the page
+  % margins by default, and it is still possible to overwrite the defaults
+  % using explicit options in \includegraphics[width, height, ...]{}
+  \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+  % Set default figure placement to htbp
+  \makeatletter
+  \def\fps@figure{htbp}
+  \makeatother
+  \ifLuaTeX
+    \usepackage{luacolor}
+    \usepackage[soul]{lua-ul}
+  \else
+    \usepackage{soul}
+  \fi
+  \setlength{\emergencystretch}{3em} % prevent overfull lines
+  \providecommand{\tightlist}{%
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+  % definitions for citeproc citations
+  \NewDocumentCommand\citeproctext{}{}
+  \NewDocumentCommand\citeproc{mm}{%
+    \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+  \makeatletter
+   % allow citations to break across lines
+   \let\@cite@ofmt\@firstofone
+   % avoid brackets around text for \cite:
+   \def\@biblabel#1{}
+   \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+  \makeatother
+  \newlength{\cslhangindent}
+  \setlength{\cslhangindent}{1.5em}
+  \newlength{\csllabelwidth}
+  \setlength{\csllabelwidth}{3em}
+  \newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+   {\begin{list}{}{%
+    \setlength{\itemindent}{0pt}
+    \setlength{\leftmargin}{0pt}
+    \setlength{\parsep}{0pt}
+    % turn on hanging indent if param 1 is 1
+    \ifodd #1
+     \setlength{\leftmargin}{\cslhangindent}
+     \setlength{\itemindent}{-1\cslhangindent}
+    \fi
+    % set entry spacing
+    \setlength{\itemsep}{#2\baselineskip}}}
+   {\end{list}}
+  \usepackage{calc}
+  \newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+  \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+  \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+  \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+  \ifLuaTeX
+  \usepackage[bidi=basic]{babel}
+  \else
+  \usepackage[bidi=default]{babel}
+  \fi
+  \babelprovide[main,import]{american}
+  \babelprovide[import]{ngerman}
+  % get rid of language-specific shorthands (see #6817):
+  \let\LanguageShortHands\languageshorthands
+  \def\languageshorthands#1{}
+  \raggedbottom % or \flushbottom
+  % keep figures where there are in the text
+  \usepackage{float} 
+  \floatplacement{figure}{H}
+  % add custom hyphentation rules
+  \hyphenation
+  {%
+    Hyphenate-me-like-this
+    Dontyoueverhyphenateme
+  }%
+  \ifLuaTeX
+    \usepackage{selnolig}  % disable illegal ligatures
+  \fi
+  \usepackage{bookmark}
+  \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+  \urlstyle{same}
+  \hypersetup{
+    pdftitle={Title},
+    pdfauthor={Eleanor Roosevelt; John Peters Humphrey},
+    pdflang={en-US},
+    hidelinks,
+    pdfcreator={LaTeX via pandoc}}
+  
+  \title{Title\thanks{Many thanks for the valuable comments.}}
+  \usepackage{etoolbox}
+  \makeatletter
+  \providecommand{\subtitle}[1]{% add subtitle to \maketitle
+    \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+  }
+  \makeatother
+  \subtitle{Subtitle}
+  \author{\href{eleanor.eoosevelt@domain.com}{Eleanor
+  Roosevelt} \and \href{jph@domain.com}{John Peters Humphrey}}
+  \date{1 January 2023}
+  
+  \begin{document}
+  \maketitle
+  \begin{abstract}
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  \end{abstract}
+  
+  
+  
+  \renewcommand*\contentsname{Contents}
+  {
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+  }
+  \listoffigures
+  \listoftables
+  \section{Heading 1}\label{heading-1}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Heading 2}\label{heading-2}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsubsection{Heading 3}\label{heading-3}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \paragraph{Heading 4}\label{heading-4}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Bold}\label{bold}
+  
+  \textbf{All human beings are born free and equal in dignity and rights.}
+  All human beings are born free and equal in dignity and rights.All human
+  beings are born free and equal in dignity and rights.All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Italic}\label{italic}
+  
+  \emph{All human beings are born free and equal in dignity and rights.}
+  All human beings are born free and equal in dignity and rights.All human
+  beings are born free and equal in dignity and rights.All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Bold and italic}\label{bold-and-italic}
+  
+  \textbf{\emph{All human beings are born free and equal in dignity and
+  rights.}} All human beings are born free and equal in dignity and
+  rights.All human beings are born free and equal in dignity and
+  rights.All human beings are born free and equal in dignity and rights.
+  
+  \subsection{Struck through}\label{struck-through}
+  
+  \st{All human beings are born free and equal in dignity and rights.} All
+  human beings are born free and equal in dignity and rights.All human
+  beings are born free and equal in dignity and rights.All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Numbered lists}\label{numbered-lists}
+  
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \end{enumerate}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Unnumbered lists}\label{unnumbered-lists}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    All human beings are born free and equal in dignity and rights.
+  
+    \begin{itemize}
+    \tightlist
+    \item
+      All human beings are born free and equal in dignity and rights.
+    \end{itemize}
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \end{itemize}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Mixed lists}\label{mixed-lists}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    All human beings are born free and equal in dignity and rights.
+  
+    \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \tightlist
+    \item
+      All human beings are born free and equal in dignity and rights.
+    \item
+      All human beings are born free and equal in dignity and rights.
+    \end{enumerate}
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \end{itemize}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Figures and captions}\label{figures-and-captions}
+  
+  \begin{figure}
+  \centering
+  \includegraphics{/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-69cfc0e03f53ae75/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg}
+  \caption{Eleanor Roosevelt hält die englische Version der Allgemeinen
+  Erklärung der Menschenrechte (FDR Presidential Library \& Museum, CC BY
+  2.0 \url{https://creativecommons.org/licenses/by/2.0}, via Wikimedia
+  Commons)}
+  \end{figure}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Code}\label{code}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \begin{Shaded}
+  \begin{Highlighting}[]
+  \FunctionTok{ping}\NormalTok{ wikipedia.org}
+  \end{Highlighting}
+  \end{Shaded}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{URLs and email addresses}\label{urls-and-email-addresses}
+  
+  \href{https://www.wikipedia.org/}{wikipedia.org},
+  \href{mailto:info@wikipedia.org}{\nolinkurl{info@wikipedia.org}}. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights. All human beings are born
+  free and equal in dignity and rights.
+  
+  \subsection{Tables}\label{tables}
+  
+  \begin{longtable}[]{@{}
+    >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+    >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  \caption{Table caption}\tabularnewline
+  \toprule\noalign{}
+  \begin{minipage}[b]{\linewidth}\raggedright
+  column 1
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  column 2
+  \end{minipage} \\
+  \midrule\noalign{}
+  \endfirsthead
+  \toprule\noalign{}
+  \begin{minipage}[b]{\linewidth}\raggedright
+  column 1
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  column 2
+  \end{minipage} \\
+  \midrule\noalign{}
+  \endhead
+  \bottomrule\noalign{}
+  \endlastfoot
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  \end{longtable}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Footnotes}\label{footnotes}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.\footnote{All human beings
+    are born free and equal in dignity and rights.}
+  
+  \subsection{Quotes}\label{quotes}
+  
+  \begin{otherlanguage}{ngerman}
+  
+  \begin{quote}
+  Alle Menschen sind frei und gleich an Würde und Rechten geboren.
+  \end{quote}
+  
+  \end{otherlanguage}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \subsection{Scientific citations}\label{scientific-citations}
+  
+  \begin{quote}
+  All human beings are born free and equal in dignity and rights. They are
+  endowed with reason and conscience and should act towards one another in
+  a spirit of brotherhood. United Nations\footnote{\emph{Universal
+    Declaration of Human Rights}.}
+  \end{quote}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.\footnote{United Nations.}
+  
+  \section{Bibliography}\label{bibliography}
+  
+  \phantomsection\label{refs}
+  \begin{CSLReferences}{1}{0}
+  \bibitem[\citeproctext]{ref-brown2016}
+  Brown, Gordon, ed. \emph{The {Universal} {Declaration} of {Human}
+  {Rights} in the 21st Century, a Living Document in a Changing World}.
+  Cambridge, {[}New York{]}: Open Book Publishers ; NYU Global Institute
+  for Advanced Study, 2016.
+  
+  \bibitem[\citeproctext]{ref-unitednations1948}
+  United Nations. \emph{Universal Declaration of Human Rights}, 1948.
+  
+  \end{CSLReferences}
+  
+  
+  
+  \end{document}
+warning: accessing absolute path `/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-69cfc0e03f53ae75/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg`; build may not be reproducible in other environments
+[INFO] [makePDF] tectonic output
+  note: reading from standard input; outputs will appear under the base name "texput"
+  note: Running TeX ...
+  note: Rerunning TeX because "texput.toc" changed ...
+  note: Rerunning TeX because "texput.toc" changed ...
+  note: Running xdvipdfmx ...
+  note: Writing `/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-69cfc0e03f53ae75/texput.pdf` (71.80 KiB)
+  note: Skipped writing 4 intermediate files (use --keep-intermediates to keep them)
+(cd article && \
+	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
+[INFO] Running filter citeproc
+[INFO] Fetching https://www.zotero.org/styles/chicago-note-bibliography...
+[INFO] Loaded references.bib from references.bib
+[INFO] Completed filter citeproc in 125 ms
+make presentation-html presentation-pdf presentation-pptx presentation-tex
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=html.yaml)
+[INFO] Running filter citeproc
+[INFO] Fetching https://www.zotero.org/styles/chicago-author-date...
+[INFO] Loaded references.bib from references.bib
+[INFO] Completed filter citeproc in 121 ms
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/reset.css...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/reveal.css...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/black.css...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/source-sans-pro.css...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-regular.eot...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-regular.eot?#iefix...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-regular.woff...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-regular.ttf...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-italic.eot...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-italic.eot?#iefix...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-italic.woff...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-italic.ttf...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibold.eot...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibold.eot?#iefix...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibold.woff...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibold.ttf...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibolditalic.eot...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibolditalic.eot?#iefix...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibolditalic.woff...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/theme/./fonts/source-sans-pro/./source-sans-pro-semibolditalic.ttf...
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//dist/reveal.js...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//plugin/notes/notes.js...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//plugin/search/search.js...
+[INFO] Fetching https://unpkg.com/reveal.js@%5E4//plugin/zoom/zoom.js...
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
+[INFO] Running filter citeproc
+[INFO] Fetching https://www.zotero.org/styles/chicago-author-date...
+[INFO] Loaded references.bib from references.bib
+[INFO] Completed filter citeproc in 120 ms
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Extracting /private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg...
+[INFO] [makePDF] Temp dir:
+  /private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3
+[INFO] [makePDF] Command line:
+  tectonic "--outdir" "/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3" "-"
+[INFO] [makePDF] Relevant environment variables:
+  ("SHELL","/bin/zsh")
+  ("TMPDIR","/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/")
+  ("PATH","/usr/local/sbin:/Users/Arturo/miniconda3/bin:/Users/Arturo/miniconda3/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Users/Arturo/.cargo/bin")
+  ("PWD","/Users/Arturo/academic-pandoc-template-1/presentation")
+  ("HOME","/Users/Arturo")
+[INFO] [makePDF] Source:
+  % Options for packages loaded elsewhere
+  \PassOptionsToPackage{unicode}{hyperref}
+  \PassOptionsToPackage{hyphens}{url}
+  %
+  \documentclass[
+    ignorenonframetext,
+    aspectratio=169,
+  ]{beamer}
+  \usepackage{pgfpages}
+  \setbeamertemplate{caption}[numbered]
+  \setbeamertemplate{caption label separator}{: }
+  \setbeamercolor{caption name}{fg=normal text.fg}
+  \beamertemplatenavigationsymbolsempty
+  \setbeameroption{}
+  % Prevent slide breaks in the middle of a paragraph
+  \widowpenalties 1 10000
+  \raggedbottom
+  \usepackage{amsmath,amssymb}
+  \usepackage{iftex}
+  \ifPDFTeX
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{textcomp} % provide euro and other symbols
+  \else % if luatex or xetex
+    \usepackage{unicode-math} % this also loads fontspec
+    \defaultfontfeatures{Scale=MatchLowercase}
+    \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \fi
+  \usepackage{lmodern}
+  \ifPDFTeX\else
+    % xetex/luatex font selection
+  \fi
+  % Use upquote if available, for straight quotes in verbatim environments
+  \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+  \IfFileExists{microtype.sty}{% use microtype if available
+    \usepackage[]{microtype}
+    \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+  }{}
+  \makeatletter
+  \@ifundefined{KOMAClassName}{% if non-KOMA class
+    \IfFileExists{parskip.sty}{%
+      \usepackage{parskip}
+    }{% else
+      \setlength{\parindent}{0pt}
+      \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+  }{% if KOMA class
+    \KOMAoptions{parskip=half}}
+  \makeatother
+  \usepackage{xcolor}
+  \newif\ifbibliography
+  \usepackage{color}
+  \usepackage{fancyvrb}
+  \newcommand{\VerbBar}{|}
+  \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+  % Add ',fontsize=\small' for more characters per line
+  \newenvironment{Shaded}{}{}
+  \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+  \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+  \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+  \newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+  \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+  \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+  \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+  \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+  \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+  \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+  \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+  \newcommand{\ExtensionTok}[1]{#1}
+  \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+  \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+  \newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+  \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+  \newcommand{\NormalTok}[1]{#1}
+  \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+  \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+  \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+  \newcommand{\RegionMarkerTok}[1]{#1}
+  \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+  \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+  \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+  \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+  \usepackage{longtable,booktabs,array}
+  \usepackage{calc} % for calculating minipage widths
+  \usepackage{caption}
+  % Make caption package work with longtable
+  \makeatletter
+  \def\fnum@table{\tablename~\thetable}
+  \makeatother
+  \usepackage{graphicx}
+  \makeatletter
+  \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+  \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+  \makeatother
+  % Scale images if necessary, so that they will not overflow the page
+  % margins by default, and it is still possible to overwrite the defaults
+  % using explicit options in \includegraphics[width, height, ...]{}
+  \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+  % Set default figure placement to htbp
+  \makeatletter
+  \def\fps@figure{htbp}
+  \makeatother
+  \ifLuaTeX
+    \usepackage{luacolor}
+    \usepackage[soul]{lua-ul}
+  \else
+    \usepackage{soul}
+  \fi
+  \setlength{\emergencystretch}{3em} % prevent overfull lines
+  \providecommand{\tightlist}{%
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+  % definitions for citeproc citations
+  \NewDocumentCommand\citeproctext{}{}
+  \NewDocumentCommand\citeproc{mm}{%
+    \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+  \makeatletter
+   % allow citations to break across lines
+   \let\@cite@ofmt\@firstofone
+   % avoid brackets around text for \cite:
+   \def\@biblabel#1{}
+   \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+  \makeatother
+  \newlength{\cslhangindent}
+  \setlength{\cslhangindent}{1.5em}
+  \newlength{\csllabelwidth}
+  \setlength{\csllabelwidth}{3em}
+  \newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+   {\begin{list}{}{%
+    \setlength{\itemindent}{0pt}
+    \setlength{\leftmargin}{0pt}
+    \setlength{\parsep}{0pt}
+    % turn on hanging indent if param 1 is 1
+    \ifodd #1
+     \setlength{\leftmargin}{\cslhangindent}
+     \setlength{\itemindent}{-1\cslhangindent}
+    \fi
+    % set entry spacing
+    \setlength{\itemsep}{#2\baselineskip}}}
+   {\end{list}}
+  \usepackage{calc}
+  \newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+  \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+  \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+  \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+  \ifLuaTeX
+  \usepackage[bidi=basic]{babel}
+  \else
+  \usepackage[bidi=default]{babel}
+  \fi
+  \babelprovide[main,import]{american}
+  \babelprovide[import]{english}
+  % get rid of language-specific shorthands (see #6817):
+  \let\LanguageShortHands\languageshorthands
+  \def\languageshorthands#1{}
+  \ifLuaTeX
+    \usepackage{selnolig}  % disable illegal ligatures
+  \fi
+  \usepackage{bookmark}
+  \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+  \urlstyle{same}
+  \hypersetup{
+    pdftitle={Title},
+    pdfauthor={Eleanor Roosevelt; John Peters Humphrey},
+    pdflang={en-US},
+    hidelinks,
+    pdfcreator={LaTeX via pandoc}}
+  
+  \title{Title}
+  \subtitle{Subtitle}
+  \author{\href{eleanor.eoosevelt@domain.com}{Eleanor
+  Roosevelt} \and \href{jph@domain.com}{John Peters Humphrey}}
+  \date{1 January 2023}
+  \institute{United Nations}
+  
+  \begin{document}
+  \frame{\titlepage}
+  
+  \begin{frame}[allowframebreaks]
+    \tableofcontents[hideallsubsections]
+  \end{frame}
+  \section{Heading 1}\label{heading-1}
+  
+  \begin{frame}{Heading 1}
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  
+  \note{This is a note visible in PowerPoint.
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    It can contain Markdown
+  \item
+    like this list
+  \end{itemize}}
+  \end{frame}
+  
+  \begin{frame}{Heading 2}
+  \phantomsection\label{heading-2}
+  All human beings are born free and equal in dignity and rights.
+  
+  \begin{block}{Heading 3}
+  \phantomsection\label{heading-3}
+  All human beings are born free and equal in dignity and rights.
+  
+  \begin{block}{Heading 4}
+  \phantomsection\label{heading-4}
+  All human beings are born free and equal in dignity and rights.
+  \end{block}
+  \end{block}
+  \end{frame}
+  
+  \begin{frame}{Bold}
+  \phantomsection\label{bold}
+  \textbf{All human beings are born free and equal in dignity and rights.}
+  All human beings are born free and equal in dignity and rights.All human
+  beings are born free and equal in dignity and rights.All human beings
+  are born free and equal in dignity and rights.
+  \end{frame}
+  
+  \begin{frame}{Italic}
+  \phantomsection\label{italic}
+  \emph{All human beings are born free and equal in dignity and rights.}
+  All human beings are born free and equal in dignity and rights.All human
+  beings are born free and equal in dignity and rights.All human beings
+  are born free and equal in dignity and rights.
+  \end{frame}
+  
+  \begin{frame}{Bold and italic}
+  \phantomsection\label{bold-and-italic}
+  \textbf{\emph{All human beings are born free and equal in dignity and
+  rights.}} All human beings are born free and equal in dignity and
+  rights.All human beings are born free and equal in dignity and
+  rights.All human beings are born free and equal in dignity and rights.
+  \end{frame}
+  
+  \begin{frame}{Struck through}
+  \phantomsection\label{struck-through}
+  \st{All human beings are born free and equal in dignity and rights.} All
+  human beings are born free and equal in dignity and rights.All human
+  beings are born free and equal in dignity and rights.All human beings
+  are born free and equal in dignity and rights.
+  \end{frame}
+  
+  \begin{frame}{Numbered lists}
+  \phantomsection\label{numbered-lists}
+  \begin{enumerate}
+  \tightlist
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \end{enumerate}
+  \end{frame}
+  
+  \begin{frame}{Unnumbered lists}
+  \phantomsection\label{unnumbered-lists}
+  \begin{itemize}
+  \tightlist
+  \item
+    All human beings are born free and equal in dignity and rights.
+  
+    \begin{itemize}
+    \tightlist
+    \item
+      All human beings are born free and equal in dignity and rights.
+    \end{itemize}
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \end{itemize}
+  \end{frame}
+  
+  \begin{frame}{Mixed lists}
+  \phantomsection\label{mixed-lists}
+  \begin{itemize}
+  \tightlist
+  \item
+    All human beings are born free and equal in dignity and rights.
+  
+    \begin{enumerate}
+    \tightlist
+    \item
+      All human beings are born free and equal in dignity and rights.
+    \item
+      All human beings are born free and equal in dignity and rights.
+    \end{enumerate}
+  \item
+    All human beings are born free and equal in dignity and rights.
+  \end{itemize}
+  \end{frame}
+  
+  \begin{frame}{Figures and captions}
+  \phantomsection\label{figures-and-captions}
+  \begin{figure}
+  \centering
+  \includegraphics[width=\textwidth,height=0.6\textheight]{/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg}
+  \caption{Eleanor Roosevelt hält die englische Version der Allgemeinen
+  Erklärung der Menschenrechte (FDR Presidential Library \& Museum, CC BY
+  2.0 \url{https://creativecommons.org/licenses/by/2.0}, via Wikimedia
+  Commons)}
+  \end{figure}
+  \end{frame}
+  
+  \begin{frame}[fragile]{Code}
+  \phantomsection\label{code}
+  \begin{Shaded}
+  \begin{Highlighting}[]
+  \FunctionTok{ping}\NormalTok{ wikipedia.org}
+  \end{Highlighting}
+  \end{Shaded}
+  \end{frame}
+  
+  \begin{frame}{URLs and email addresses}
+  \phantomsection\label{urls-and-email-addresses}
+  \href{https://www.wikipedia.org/}{wikipedia.org},
+  \href{mailto:info@wikipedia.org}{\nolinkurl{info@wikipedia.org}}. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights. All human beings are born
+  free and equal in dignity and rights.
+  \end{frame}
+  
+  \begin{frame}{Tables}
+  \phantomsection\label{tables}
+  \begin{longtable}[]{@{}
+    >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+    >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  \caption{Table caption}\tabularnewline
+  \toprule\noalign{}
+  \begin{minipage}[b]{\linewidth}\raggedright
+  column 1
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  column 2
+  \end{minipage} \\
+  \midrule\noalign{}
+  \endfirsthead
+  \toprule\noalign{}
+  \begin{minipage}[b]{\linewidth}\raggedright
+  column 1
+  \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+  column 2
+  \end{minipage} \\
+  \midrule\noalign{}
+  \endhead
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  All human beings are born free and equal in dignity and rights. & All
+  human beings are born free and equal in dignity and rights. \\
+  \bottomrule\noalign{}
+  \end{longtable}
+  \end{frame}
+  
+  \begin{frame}{Footnotes}
+  \phantomsection\label{footnotes}
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.\footnote<.->{All human
+    beings are born free and equal in dignity and rights.}
+  \end{frame}
+  
+  \begin{frame}{Quotes}
+  \phantomsection\label{quotes}
+  \begin{quote}
+  All human beings are born free and equal in dignity and rights.
+  \end{quote}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.
+  \end{frame}
+  
+  \begin{frame}{Scientific citations}
+  \phantomsection\label{scientific-citations}
+  \begin{otherlanguage}{english}
+  
+  \begin{quote}
+  All human beings are born free and equal in dignity and rights. They are
+  endowed with reason and conscience and should act towards one another in
+  a spirit of brotherhood. United Nations (1948)
+  \end{quote}
+  
+  \end{otherlanguage}
+  
+  All human beings are born free and equal in dignity and rights. All
+  human beings are born free and equal in dignity and rights. All human
+  beings are born free and equal in dignity and rights. All human beings
+  are born free and equal in dignity and rights.(United Nations 1948)
+  \end{frame}
+  
+  \begin{frame}{Two columns of equal width}
+  \phantomsection\label{two-columns-of-equal-width}
+  \begin{columns}[T]
+  \begin{column}{0.48\textwidth}
+  Left column text.
+  
+  Another text line.
+  \end{column}
+  
+  \begin{column}{0.48\textwidth}
+  \begin{itemize}
+  \tightlist
+  \item
+    Item 1.
+  \item
+    Item 2.
+  \item
+    Item 3.
+  \end{itemize}
+  \end{column}
+  \end{columns}
+  \end{frame}
+  
+  \begin{frame}{Two columns of with 40:60 split}
+  \phantomsection\label{two-columns-of-with-4060-split}
+  \begin{columns}[T]
+  \begin{column}{0.4\textwidth}
+  Left column text.
+  
+  Another text line.
+  \end{column}
+  
+  \begin{column}{0.6\textwidth}
+  \begin{itemize}
+  \tightlist
+  \item
+    Item 1.
+  \item
+    Item 2.
+  \item
+    Item 3.
+  \end{itemize}
+  \end{column}
+  \end{columns}
+  \end{frame}
+  
+  \begin{frame}{Three columns with equal split}
+  \phantomsection\label{three-columns-with-equal-split}
+  \begin{columns}[T]
+  \begin{column}{0.48\textwidth}
+  Left column text.
+  
+  Another text line.
+  \end{column}
+  
+  \begin{column}{0.48\textwidth}
+  Middle column list:
+  
+  \begin{enumerate}
+  \tightlist
+  \item
+    Item 1.
+  \item
+    Item 2.
+  \end{enumerate}
+  \end{column}
+  
+  \begin{column}{0.48\textwidth}
+  Right column list:
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Item 1.
+  \item
+    Item 2.
+  \end{itemize}
+  \end{column}
+  \end{columns}
+  \end{frame}
+  
+  \begin{frame}{Three columns with 30:40:30 split}
+  \phantomsection\label{three-columns-with-304030-split}
+  \begin{columns}[T]
+  \begin{column}{0.3\textwidth}
+  Left column text.
+  
+  Another text line.
+  \end{column}
+  
+  \begin{column}{0.4\textwidth}
+  Middle column list:
+  
+  \begin{enumerate}
+  \tightlist
+  \item
+    Item 1.
+  \item
+    Item 2.
+  \end{enumerate}
+  \end{column}
+  
+  \begin{column}{0.3\textwidth}
+  Right column list:
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Item 1.
+  \item
+    Item 2.
+  \end{itemize}
+  \end{column}
+  \end{columns}
+  \end{frame}
+  
+  \begin{frame}{Two columns: image and text}
+  \phantomsection\label{two-columns-image-and-text}
+  \begin{columns}[T]
+  \begin{column}{0.48\textwidth}
+  \includegraphics[width=\textwidth,height=0.5\textheight]{/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg}
+  \end{column}
+  
+  \begin{column}{0.48\textwidth}
+  Text in the right column.
+  
+  List from the right column:
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Item 1.
+  \item
+    Item 2.
+  \end{itemize}
+  \end{column}
+  \end{columns}
+  \end{frame}
+  
+  \begin{frame}{Two columns: image and table}
+  \phantomsection\label{two-columns-image-and-table}
+  \begin{columns}[T]
+  \begin{column}{0.48\textwidth}
+  \includegraphics[width=\textwidth,height=0.5\textheight]{/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg}
+  \end{column}
+  
+  \begin{column}{0.48\textwidth}
+  \begin{longtable}[]{@{}lc@{}}
+  \toprule\noalign{}
+  \textbf{Item} & \textbf{Option} \\
+  \midrule\noalign{}
+  \endhead
+  Item 1 & Option 1 \\
+  Item 2 & Option 2 \\
+  \bottomrule\noalign{}
+  \end{longtable}
+  \end{column}
+  \end{columns}
+  \end{frame}
+  
+  \begin{frame}{Bibliography}
+  \phantomsection\label{bibliography}
+  \phantomsection\label{refs}
+  \begin{CSLReferences}{1}{0}
+  \bibitem[\citeproctext]{ref-brown2016}
+  Brown, Gordon, ed. 2016. \emph{The {Universal} {Declaration} of {Human}
+  {Rights} in the 21st Century, a Living Document in a Changing World}.
+  Cambridge, {[}New York{]}: Open Book Publishers ; NYU Global Institute
+  for Advanced Study.
+  
+  \bibitem[\citeproctext]{ref-unitednations1948}
+  United Nations. 1948. \emph{Universal Declaration of Human Rights}.
+  
+  \end{CSLReferences}
+  \end{frame}
+  
+  \end{document}
+warning: accessing absolute path `/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3/images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg`; build may not be reproducible in other environments
+warning: texput.tex:488: Overfull \hbox (118.35838pt too wide) detected at line 488
+warning: texput.tex:488: Overfull \hbox (118.35838pt too wide) detected at line 488
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+[INFO] [makePDF] tectonic output
+  note: reading from standard input; outputs will appear under the base name "texput"
+  note: Running TeX ...
+  note: Rerunning TeX because "texput.toc" changed ...
+  note: Running xdvipdfmx ...
+  note: Writing `/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-ddd8a61c765332b3/texput.pdf` (65.20 KiB)
+  note: Skipped writing 5 intermediate files (use --keep-intermediates to keep them)
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=pptx.yaml)
+[INFO] Running filter citeproc
+[INFO] Fetching https://www.zotero.org/styles/chicago-author-date...
+[INFO] Loaded references.bib from references.bib
+[INFO] Completed filter citeproc in 108 ms
+[INFO] Not rendering Div ("",["column"],[]) [Para [Str "Right",Space,Str "column",Space,Str "list:"],BulletList [[Plain [Str "Item",Space,Str "1."]],[Plain [Str "Item",Space,Str "2."]]]]
+[INFO] Not rendering Div ("",["column"],[("width","30%")]) [Para [Str "Right",Space,Str "column",Space,Str "list:"],BulletList [[Plain [Str "Item",Space,Str "1."]],[Plain [Str "Item",Space,Str "2."]]]]
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+[INFO] Loaded images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg from images/Eleanor_Roosevelt_and_Human_Rights_Declaration.jpeg
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
+[INFO] Running filter citeproc
+[INFO] Fetching https://www.zotero.org/styles/chicago-author-date...
+[INFO] Loaded references.bib from references.bib
+[INFO] Completed filter citeproc in 116 ms
+make thesis-docx thesis-epub thesis-pdf thesis-tex
+(cd thesis && \
+	pandoc --defaults=./../defaults.yaml --defaults=docx.yaml)
+[INFO] Running filter citeproc
+[INFO] Completed filter citeproc in 6 ms
+[INFO] Running filter pandoc-crossref
+[INFO] Completed filter pandoc-crossref in 14 ms
+[INFO] Running filter filters/multiple-bibliographies.lua
+[INFO] Completed filter filters/multiple-bibliographies.lua in 25 ms
+[INFO] Running filter filters/pandoc-quotes.lua
+[INFO] Completed filter filters/pandoc-quotes.lua in 4 ms
+(cd thesis && \
+	pandoc --defaults=./../defaults.yaml --defaults=epub.yaml)
+[INFO] Running filter citeproc
+[INFO] Completed filter citeproc in 7 ms
+[INFO] Running filter pandoc-crossref
+[INFO] Completed filter pandoc-crossref in 13 ms
+[INFO] Running filter filters/multiple-bibliographies.lua
+[INFO] Completed filter filters/multiple-bibliographies.lua in 23 ms
+[INFO] Running filter filters/pandoc-quotes.lua
+[INFO] Completed filter filters/pandoc-quotes.lua in 4 ms
+[INFO] Not rendering RawBlock (Format "openxml") "<w:tcPr><w:vAlign w:val=\"center\"/></w:tcPr>"
+[INFO] Not rendering RawBlock (Format "latex") "%FIXME custom line spacing for appendix\n\\setstretch{1}"
+[INFO] Not rendering RawBlock (Format "latex") "\\clearpage"
+(cd thesis && \
+	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
+[INFO] Running filter citeproc
+[INFO] Completed filter citeproc in 6 ms
+[INFO] Running filter pandoc-crossref
+[INFO] Completed filter pandoc-crossref in 6 ms
+[INFO] Running filter filters/multiple-bibliographies.lua
+[INFO] Completed filter filters/multiple-bibliographies.lua in 23 ms
+[INFO] Running filter filters/pandoc-quotes.lua
+[INFO] Completed filter filters/pandoc-quotes.lua in 4 ms
+[INFO] Not rendering RawBlock (Format "openxml") "<w:tcPr><w:vAlign w:val=\"center\"/></w:tcPr>"
+[INFO] [makePDF] Temp dir:
+  /private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-7a52881d2aca51df
+[INFO] [makePDF] Command line:
+  tectonic "--outdir" "/private/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/tex2pdf.-7a52881d2aca51df" "-"
+[INFO] [makePDF] Relevant environment variables:
+  ("SHELL","/bin/zsh")
+  ("TMPDIR","/var/folders/5c/4_q566ys0357h1kwdc9fkh_80000gq/T/")
+  ("PATH","/usr/local/sbin:/Users/Arturo/miniconda3/bin:/Users/Arturo/miniconda3/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Users/Arturo/.cargo/bin")
+  ("PWD","/Users/Arturo/academic-pandoc-template-1/thesis")
+  ("HOME","/Users/Arturo")
+[INFO] [makePDF] Source:
+  % Options for packages loaded elsewhere
+  \PassOptionsToPackage{unicode}{hyperref}
+  \PassOptionsToPackage{hyphens}{url}
+  %
+  \documentclass[
+  ]{article}
+  \usepackage{amsmath,amssymb}
+  \usepackage{iftex}
+  \ifPDFTeX
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{textcomp} % provide euro and other symbols
+  \else % if luatex or xetex
+    \usepackage{unicode-math} % this also loads fontspec
+    \defaultfontfeatures{Scale=MatchLowercase}
+    \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \fi
+  \usepackage{lmodern}
+  \ifPDFTeX\else
+    % xetex/luatex font selection
+  \fi
+  % Use upquote if available, for straight quotes in verbatim environments
+  \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+  \IfFileExists{microtype.sty}{% use microtype if available
+    \usepackage[]{microtype}
+    \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+  }{}
+  \makeatletter
+  \@ifundefined{KOMAClassName}{% if non-KOMA class
+    \IfFileExists{parskip.sty}{%
+      \usepackage{parskip}
+    }{% else
+      \setlength{\parindent}{0pt}
+      \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+  }{% if KOMA class
+    \KOMAoptions{parskip=half}}
+  \makeatother
+  \usepackage{xcolor}
+  \usepackage{longtable,booktabs,array}
+  \usepackage{calc} % for calculating minipage widths
+  % Correct order of tables after \paragraph or \subparagraph
+  \usepackage{etoolbox}
+  \makeatletter
+  \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+  \makeatother
+  % Allow footnotes in longtable head/foot
+  \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+  \makesavenoteenv{longtable}
+  \setlength{\emergencystretch}{3em} % prevent overfull lines
+  \providecommand{\tightlist}{%
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+  \makeatletter
+  \@ifpackageloaded{subfig}{}{\usepackage{subfig}}
+  \@ifpackageloaded{caption}{}{\usepackage{caption}}
+  \captionsetup[subfloat]{margin=0.5em}
+  \AtBeginDocument{%
+  \renewcommand*\figurename{Figure}
+  \renewcommand*\tablename{Table}
+  }
+  \AtBeginDocument{%
+  \renewcommand*\listfigurename{List of Figures}
+  \renewcommand*\listtablename{List of Tables}
+  }
+  \newcounter{pandoccrossref@subfigures@footnote@counter}
+  \newenvironment{pandoccrossrefsubfigures}{%
+  \setcounter{pandoccrossref@subfigures@footnote@counter}{0}
+  \begin{figure}\centering%
+  \gdef\global@pandoccrossref@subfigures@footnotes{}%
+  \DeclareRobustCommand{\footnote}[1]{\footnotemark%
+  \stepcounter{pandoccrossref@subfigures@footnote@counter}%
+  \ifx\global@pandoccrossref@subfigures@footnotes\empty%
+  \gdef\global@pandoccrossref@subfigures@footnotes{{##1}}%
+  \else%
+  \g@addto@macro\global@pandoccrossref@subfigures@footnotes{, {##1}}%
+  \fi}}%
+  {\end{figure}%
+  \addtocounter{footnote}{-\value{pandoccrossref@subfigures@footnote@counter}}
+  \@for\f:=\global@pandoccrossref@subfigures@footnotes\do{\stepcounter{footnote}\footnotetext{\f}}%
+  \gdef\global@pandoccrossref@subfigures@footnotes{}}
+  \@ifpackageloaded{float}{}{\usepackage{float}}
+  \floatstyle{ruled}
+  \@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+  \floatname{codelisting}{Listing}
+  \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+  \makeatother
+  \ifLuaTeX
+    \usepackage{selnolig}  % disable illegal ligatures
+  \fi
+  \usepackage{bookmark}
+  \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+  \urlstyle{same}
+  \hypersetup{
+    pdftitle={Methods for Success},
+    hidelinks,
+    pdfcreator={LaTeX via pandoc}}
+  
+  \title{Methods for Success}
+  \author{}
+  \date{2024-02-07}
+  
+  \begin{document}
+  \maketitle
+  
+  {[}{[}11\_Chapter\_11{]}{]} {[}{[}12\_Chapter\_12{]}{]}
+  {[}{[}13\_Chapter\_13{]}{]} {[}{[}14\_Chapter\_14{]}{]}
+  {[}{[}15\_Chapter\_15{]}{]} {[}{[}16\_Chapter\_16{]}{]}
+  {[}{[}17\_Chapter\_17{]}{]} {[}{[}18\_Chapter\_18{]}{]}
+  {[}{[}19\_Chapter\_19{]}{]} {[}{[}19+1\_Chapter\_19+1{]}{]}
+  {[}{[}19+2\_Chapter\_19+2{]}{]} {[}{[}19+3\_Chapter\_19+3{]}{]}
+  {[}{[}19+4\_Chapter\_19+4{]}{]} {[}{[}19+5\_Chapter\_19+5{]}{]}
+  {[}{[}19+6\_Chapter\_19+6{]}{]} {[}{[}19+7\_Chapter\_19+7{]}{]}
+  {[}{[}19+8\_Chapter\_19+8{]}{]} {[}{[}19+9\_Chapter\_19+9{]}{]}
+  {[}{[}19+10\_Chapter\_19+10{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I share an experience in which successfully responded to a~ major
+    security incident. What methods made me successful? What could I have
+    done better?
+  \end{itemize}
+  
+  {[}{[}111\_Chapter\_111{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    An experience in which I successfully coordinated my company’s
+    security operations with a public agency.
+  \end{itemize}
+  
+  {[}{[}Experience Details{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I share an experience in which I had to deal with a nation state
+    attack. What was the context and how did we manage to mitigate the
+    threats?
+  \end{itemize}
+  
+  {[}{[}Context{]}{]} {[}{[}Mitigation Strategies{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    How did I manage building and executing a security strategy from
+    scratch?
+  \end{itemize}
+  
+  {[}{[}Detailed Approach{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I share an effective method I have used to ensure that operational
+    security security provisions comply with the company policies and
+    requirements.
+  \end{itemize}
+  
+  {[}{[}Effective Methods{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I share an experience in which I identified a security risk and
+    improved operations accordingly. What methods led to my discovery and
+    successful reduction of the risk?
+  \end{itemize}
+  
+  {[}{[}Discovery Methods{]}{]} {[}{[}Risk Reduction{]}{]}
+  
+  Public Platform for Industry Communication - What are the qualities that
+  a security operations manager needs to be successful?
+  
+  {[}{[}Risk Reduction{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    How do I ensure the company controls and processes strike the right
+    balance between developer productivity and security?
+  \end{itemize}
+  
+  {[}{[}Strategy{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    How would I measure success for a security operations team?
+  \end{itemize}
+  
+  {[}{[}Success Metrics{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What approach would you take in designing and implementing incident
+    response playbooks? What makes them effective?
+  \end{itemize}
+  
+  {[}{[}Design Approach{]}{]} {[}{[}Effectiveness Factors{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I describe my experience preparing, reviewing and presenting an
+    operation security budget
+  \end{itemize}
+  
+  {[}{[}Experience{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What are the 3 most important security controls for a company like
+    Canonical and why?
+  \end{itemize}
+  
+  {[}{[}Security Controls{]}{]} {[}{[}Rationale{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I describe my last experience creating security standards and
+    procedures. Which framework did I use and why?
+  \end{itemize}
+  
+  {[}{[}Framework Used{]}{]} {[}{[}Reason for Choice{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I describe my favourite security tools and what makes them stand out
+    from other options in their market
+  \end{itemize}
+  
+  {[}{[}Tools{]}{]} {[}{[}Distinctive Features{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    I describe the security frameworks I have experience with and which I
+    have found most valuable, and why?
+  \end{itemize}
+  
+  {[}{[}Frameworks{]}{]} {[}{[}Most Valuable Framework{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    How do I approach prioritization of security controls and projects?
+  \end{itemize}
+  
+  {[}{[}Prioritization Approach{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What is my experience with ISO 27001 ?
+  \end{itemize}
+  
+  {[}{[}Details{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What is my approach to threat modeling? What methodologies do I find
+    most useful?
+  \end{itemize}
+  
+  {[}{[}Methodologies{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    How do I translate findings from a threat model into changes for an
+    organization?
+  \end{itemize}
+  
+  {[}{[}Threat Modeling Strategy{]}{]}
+  
+  {[}{[}21\_Chapter\_21{]}{]} {[}{[}22\_Chapter\_22{]}{]}
+  {[}{[}23\_Chapter\_23{]}{]} {[}{[}24\_Chapter\_24{]}{]}
+  {[}{[}25\_Chapter\_25{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Outline your thoughts on the mission of Canonical. What is it about
+    the company’s purpose and goals which is most appealing to you? What
+    do you see as risky or unappealing?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Who are Canonical’s key competitors, and how should Canonical set
+    about winning?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Why do you most want to work for Canonical?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What would you most want to change about Canonical?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What gets you most excited about this role?
+  \end{itemize}
+  
+  {[}{[}31\_Chapter\_31{]}{]} {[}{[}32\_Chapter\_32{]}{]}
+  {[}{[}33\_Chapter\_33{]}{]} {[}{[}34\_Chapter\_34{]}{]}
+  {[}{[}35\_Chapter\_35{]}{]} {[}{[}36\_Chapter\_36{]}{]}
+  {[}{[}37\_Chapter\_37{]}{]} {[}{[}38\_Chapter\_38{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    How did you fare in high school mathematics, physical sciences and
+    computing? Which were strengths and which most enjoyable? How did you
+    rank, competitively, in them?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What sort of high school student were you? Outside of class, what were
+    your interests and hobbies?~ What would your high school peers
+    remember you for, if we asked them?
+  \end{itemize}
+  
+  \textasciitilde\textasciitilde- \textasciitilde\textasciitilde In
+  languages and the arts at high school, what were your strongest subjects
+  and how did you rank in those among your school peers?
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe some high school achievements considered exceptional by peers
+    and staff
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Which degree and university did you choose, and why?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Which university courses did you perform best at? How did you rank in
+    your degree?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Outside of class, what were your interests and where did you spend
+    your time?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What did you achieve at university that you consider exceptional? – At
+    high school or university, what leadership roles did you take on?
+  \end{itemize}
+  
+  {[}{[}41\_Chapter\_41{]}{]} {[}{[}42\_Chapter\_42{]}{]}
+  {[}{[}43\_Chapter\_43{]}{]} {[}{[}44\_Chapter\_44{]}{]}
+  {[}{[}45\_Chapter\_45{]}{]} {[}{[}46\_Chapter\_46{]}{]}
+  {[}{[}47\_Chapter\_47{]}{]} {[}{[}48\_Chapter\_48{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Would you describe yourself as an effective manager? Why?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe the daily, weekly, monthly and quarterly habits you expect in
+    a well-run security operations team, for individuals and the team
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe your experience of development methodologies, and your
+    preferred approach in different circumstances
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    What skills are most important to develop in managers and analysts
+    reporting to you?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    How do you prefer to plan, coordinate and track progress across many
+    software products?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe your approach to team and individual performance management
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe your approach to coaching, mentorship and career development
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe the relationship between security, engineering and corporate
+    IT
+  \end{itemize}
+  
+  {[}{[}51\_Chapter\_51{]}{]} {[}{[}52\_Chapter\_52{]}{]}
+  {[}{[}53\_Chapter\_53{]}{]} {[}{[}54\_Chapter\_54{]}{]}
+  {[}{[}55\_Chapter\_55{]}{]}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Do you have a public platform where you communicate about the
+    industry? Medium, Twitter, Youtube, a personal blog? Please provide
+    links.
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe your speaking experience at industry events and conferences
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Are you a thought leader in any particular area of technology?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe any experience working with startups. What did you draw from
+    that experience that would be relevant for this application?
+  \end{itemize}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    Describe any experience working in a public company. What is important
+    for your colleagues to know about being a public company?
+  \end{itemize}
+  
+  %FIXME custom line spacing for appendix
+  \setstretch{1}
+  
+  \listoffigures
+  
+  \section{Bibliography}\label{bibliography}
+  
+  \subsection{Sources}\label{sources}
+  
+  \phantomsection\label{refs_sources}
+  
+  \clearpage
+  
+  \subsection{Literature}\label{literature}
+  
+  \phantomsection\label{refs_main}
+  
+  \end{document}
+warning: texput.tex:115: Underfull \hbox (badness 10000) in paragraph at lines 105--115
+warning: texput.tex:115: Underfull \hbox (badness 10000) in paragraph at lines 105--115
+warning: texput.tex:115: Underfull \hbox (badness 10000) in paragraph at lines 105--115
+error: texput.tex:477: Undefined control sequence
+error: halted on potentially-recoverable error as specified
+[INFO] [makePDF] tectonic output
+  note: reading from standard input; outputs will appear under the base name "texput"
+  note: Running TeX ...
+Error producing PDF.
+note: reading from standard input; outputs will appear under the base name "texput"
+note: Running TeX ...
+
+make[2]: *** [thesis-pdf] Error 43
+make[1]: *** [thesis] Error 2
+make: *** [all] Error 2

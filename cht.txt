@@ -1,0 +1,24 @@
+make article presentation thesis
+make article-docx article-pdf article-tex
+(cd article && \
+	pandoc --defaults=./../defaults.yaml --defaults=docx.yaml)
+(cd article && \
+	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
+(cd article && \
+	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
+make presentation-html presentation-pdf presentation-pptx presentation-tex
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=html.yaml)
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=pptx.yaml)
+(cd presentation && \
+	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
+make thesis-docx thesis-epub thesis-pdf thesis-tex
+(cd thesis && \
+	pandoc --defaults=./../defaults.yaml --defaults=docx.yaml)
+(cd thesis && \
+	pandoc --defaults=./../defaults.yaml --defaults=epub.yaml)
+(cd thesis && \
+	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
