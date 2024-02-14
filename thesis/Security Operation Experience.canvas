@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"12cf546ab1ebca42","type":"group","x":-1820,"y":-200,"width":2400,"height":1540,"label":"Security Operation Experience"},
+		{"id":"38c2a617a7626be8","type":"file","file":"Balancing Developer Productivity and Security.md","x":-1794,"y":1200,"width":486,"height":80},
+		{"id":"083e56e9e54f6f30","type":"file","file":"Measuring Success in Security Operations.md","x":-1136,"y":1180,"width":459,"height":100},
+		{"id":"0500a2a6defe2c73","type":"file","file":"Qualities of a Successful Security Operations Manager.md","x":-420,"y":1153,"width":513,"height":94},
+		{"id":"46820a588db958f1","type":"file","file":"Operation Security Budget Management.md","x":-1794,"y":900,"width":459,"height":100},
+		{"id":"86e89d6b118d4395","type":"file","file":"Designing Incident Response Playbooks.md","x":-1179,"y":900,"width":546,"height":80},
+		{"id":"c05d965621c2006e","type":"file","file":"Top 3 Security Controls for Canonical.md","x":-375,"y":900,"width":526,"height":108},
+		{"id":"982fb7f4ccc208d8","type":"file","file":"Ensuring Compliance with Policies.md","x":-60,"y":580,"width":573,"height":50},
+		{"id":"98edb81213b50e1d","type":"file","file":"Creating Security Standards and Procedures.md","x":-940,"y":540,"width":526,"height":90},
+		{"id":"9df523b59477a8a1","type":"file","file":"Building and Executing Security Strategy.md","x":-1026,"y":280,"width":393,"height":90},
+		{"id":"9bb9bfee08b65916","type":"file","file":"Nation State Attack Management.md","x":-453,"y":280,"width":333,"height":90},
+		{"id":"748953ca8eac691d","type":"file","file":"Security Frameworks Experience.md","x":40,"y":300,"width":503,"height":50},
+		{"id":"9ee00dbe3fc6f7e4","type":"file","file":"Translating Threat Model Findings.md","x":-483,"y":-125,"width":394,"height":85},
+		{"id":"2f74c1d3eae019b9","type":"file","file":"Coordination with Public Agency.md","x":-676,"y":100,"width":513,"height":50},
+		{"id":"00b1f6d524181b48","type":"file","file":"Prioritization of Security Controls and Projects.md","x":-1239,"y":39,"width":471,"height":108},
+		{"id":"a9681dbed87f98a4","type":"file","file":"Experience with ISO 27001.md","x":-1179,"y":-136,"width":414,"height":70},
+		{"id":"83c52f3e62c0f4ec","type":"file","file":"Approach to Threat Modeling.md","x":-1773,"y":-13,"width":417,"height":93},
+		{"id":"000cd400497a1f07","type":"file","file":"Favourite Security Tools.md","x":40,"y":760,"width":513,"height":50},
+		{"id":"89341d912ffa65be","type":"file","file":"Identifying and Reducing Security Risks.md","x":-859,"y":723,"width":573,"height":75},
+		{"id":"362f030660cb1c7e","type":"file","file":"Successful Response to a Major Security Incident.md","x":-1781,"y":325,"width":809,"height":355}
+	],
+	"edges":[]
+}
